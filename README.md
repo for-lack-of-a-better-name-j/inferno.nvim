@@ -10,9 +10,7 @@ In your Neovim configuration directory, you can load it with Lazy:
 
 
 `return{
-  
   "for-lack-of-a-better-name-j/inferno.nvim"
-
 }`
 
 
