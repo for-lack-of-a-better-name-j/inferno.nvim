@@ -12,3 +12,4 @@ In your Neovim configuration directory, you can load it with Lazy:
 `return{
   "for-lack-of-a-better-name-j/inferno.nvim"
 }`
+![image](https://github.com/user-attachments/assets/15fc8c69-1a30-4c85-b467-7f9ebe06d42a)
