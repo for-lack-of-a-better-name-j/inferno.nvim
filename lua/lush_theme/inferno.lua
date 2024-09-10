@@ -55,6 +55,7 @@ local dark_green = hsl(100, 100, 30)
 local sea_blue = hsl(163,87,60)
 local violent_purple = hsl(265,100,55)
 local hot_purple = hsl(340, 100, 55)
+local white_hot = hsl(94,0,94)
 
 local ember_red_triadic = ember_red.rotate(120)
 local ember_red_complement = ember_red.rotate(180).darken(10).saturate(10)
@@ -157,7 +158,7 @@ local theme = lush(function(injected_functions)
     Comment        {fg = Normal.bg.de(25).li(35).ro(-10) }, -- Any comment
 
     Constant       {fg=sea_blue}, -- (*) Any constant
-    String         {fg=neon_green}, --   A string constant: "this is a string"
+    String         {fg=sea_blue}, --   A string constant: "this is a string"
     Character      {fg=neon_green}, --   A character constant: 'c', '\n'
     Number         {fg=blazing_yellow}, --   A number constant: 234, 0xff
     Boolean        {fg=fire_orange.rotate(14)}, --   A boolean constant: TRUE, false
@@ -170,7 +171,7 @@ local theme = lush(function(injected_functions)
     Conditional    {fg=neon_green}, --   if, then, else, endif, switch, etc.
     Repeat         { }, --   for, do, while, etc.
     Label          { }, --   case, default, etc.
-    Operator        {fg=hot_purple}, --   "sizeof", "+", "*", etc.
+    Operator        {fg=white_hot}, --   "sizeof", "+", "*", etc.
     Keyword         {fg=neon_green}, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
@@ -262,7 +263,7 @@ local theme = lush(function(injected_functions)
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
     -- sym"@comment"           { }, -- Comment
-    sym"@punctuation"       {fg=blazing_yellow}, -- Delimiter
+    sym"@punctuation"       {fg=neon_green}, -- Delimiter
     -- sym"@constant"          { }, -- Constant
     -- sym"@constant.builtin"  { }, -- Special
     -- sym"@constant.macro"    { }, -- Define
